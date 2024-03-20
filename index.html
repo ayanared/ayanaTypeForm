@@ -11,7 +11,14 @@
     Hello World
     <p>Phone number to call: six-seven-eight-four-four-six-seven-seven-eight-eight 6784467788</p>
 
-    <div data-tf-live="01HRYZP0JQ4JVWCC65Y9DDP6PW"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    <div data-tf-live="01HRYZP0JQ4JVWCC65Y9DDP6PW" data-tf-on-submit="submit"></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <script>
+      // this function needs to be available on global scope (window)
+      function submit({ formId, responseId }) {
+        console.log(`Form ${formId} submitted, response id: ${responseId}`)
+      }
+    </script>
 	<script src="index.js"></script>
     <script type="text/javascript" src="http://localhost:8888/companies/915904843/b74ec9c8de6ee5ccfeca/12/swap.js"></script>
 </body>
